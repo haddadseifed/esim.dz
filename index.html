@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eSIM DZ | Digital eSIMs for Algeria & Worldwide</title>
+  <meta name="description" content="Buy eSIMs instantly for Algeria and global travel. Fast activation, secure checkout (demo), and friendly support.">
+  <link rel="icon" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-row">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="eSIM DZ logo">
+        <span>eSIM DZ</span>
+      </a>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#plans">Plans</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn primary" href="#plans">Buy eSIM</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Stay Connected.<br>Go Digital with <span class="grad">eSIM DZ</span>.</h1>
+        <p>The fastest way to activate mobile data in seconds — no plastic, no waiting.</p>
+        <div class="cta">
+          <a class="btn primary" href="#plans">Buy eSIM Now</a>
+          <a class="btn ghost" href="#how">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About eSIM DZ</h2>
+      <p>We are Algeria’s first digital eSIM platform for travelers and locals. Instant activation, secure demo checkout, and global coverage.</p>
+      <div class="features">
+        <div class="card"><h3>⚡ Instant</h3><p>Activate in minutes with a QR code.</p></div>
+        <div class="card"><h3>🌍 Global</h3><p>Local, regional, and worldwide plans.</p></div>
+        <div class="card"><h3>🔒 Secure</h3><p>Client-side demo checkout (no real payments).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" class="section alt">
+    <div class="container">
+      <h2>Popular Plans</h2>
+      <div class="grid plans">
+        <article class="plan">
+          <h3>Local eSIM (Algeria)</h3>
+          <p class="muted">2 GB · 7 Days</p>
+          <div class="price">$5</div>
+          <button class="btn primary" onclick="openCheckout('Local eSIM (Algeria)', '2 GB · 7 Days', 5)">Buy Now</button>
+        </article>
+        <article class="plan">
+          <h3>Regional eSIM (MENA + EU)</h3>
+          <p class="muted">5 GB · 15 Days</p>
+          <div class="price">$15</div>
+          <button class="btn primary" onclick="openCheckout('Regional eSIM (MENA + EU)', '5 GB · 15 Days', 15)">Buy Now</button>
+        </article>
+        <article class="plan">
+          <h3>Global eSIM</h3>
+          <p class="muted">10 GB · 30 Days</p>
+          <div class="price">$30</div>
+          <button class="btn primary" onclick="openCheckout('Global eSIM', '10 GB · 30 Days', 30)">Buy Now</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="container">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>Choose a plan</li>
+        <li>Use demo checkout</li>
+        <li>Get a QR preview</li>
+        <li>Scan &amp; activate</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details><summary>What is an eSIM?</summary><p>An eSIM is a digital SIM that lets you activate a cellular plan without a physical SIM card.</p></details>
+      <details><summary>Will it work on my phone?</summary><p>Most recent iOS and Android devices support eSIM. Check your phone’s specifications.</p></details>
+      <details><summary>How fast is activation?</summary><p>Instant once you scan the QR code and follow device prompts.</p></details>
+      <details><summary>Is payment real?</summary><p>No. This project uses a simulated, client-side demo checkout for preview.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Questions? We’re here to help.</p>
+      <ul class="contact">
+        <li>WhatsApp: <a href="https://wa.me/213660681925" target="_blank" rel="noopener">+213 660 68 19 25</a></li>
+        <li>Email: <a href="mailto:info@esimdz.dpdns.org">info@esimdz.dpdns.org</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/esimdza" target="_blank" rel="noopener">@esimdza</a></li>
+        <li>Telegram: <a href="https://t.me/esimdza" target="_blank" rel="noopener">@esimdza</a></li>
+        <li>TikTok: <a href="https://www.tiktok.com/@esimdza" target="_blank" rel="noopener">@esimdza</a></li>
+        <li>YouTube: <a href="https://youtube.com/@esimdz" target="_blank" rel="noopener">@esimdz</a></li>
+        <li>Facebook: @techplusdz • X: @freeprofitx</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 eSIM DZ Algeria — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Checkout Modal -->
+  <div id="checkout" class="modal" aria-hidden="true">
+    <div class="dialog">
+      <button class="close" onclick="closeCheckout()" aria-label="Close">×</button>
+      <h3 id="co-title">Checkout (Demo)</h3>
+      <form onsubmit="return submitCheckout(event)">
+        <div class="row">
+          <label>Full name<input required id="co-name" placeholder="Your name"></label>
+          <label>Email<input required type="email" id="co-email" placeholder="you@example.com"></label>
+        </div>
+        <label>Country
+          <input id="co-country" placeholder="Algeria">
+        </label>
+        <label>Selected plan
+          <input id="co-plan" readonly>
+        </label>
+        <label>Details
+          <input id="co-details" readonly>
+        </label>
+        <div class="pay">
+          <button type="button" class="btn ghost">Card</button>
+          <button type="button" class="btn ghost">PayPal</button>
+          <button type="button" class="btn ghost">Apple Pay</button>
+          <button type="button" class="btn ghost">Google Pay</button>
+        </div>
+        <div class="total">Total: <span id="co-total">$0</span></div>
+        <button class="btn primary wide" type="submit">Pay Now (Demo)</button>
+        <p class="muted center">No real payment is made. You’ll get a QR preview and downloadable PDF.</p>
+      </form>
+      <div id="success" class="success" hidden>
+        <h3>Order Confirmed 🎉</h3>
+        <p id="order-id"></p>
+        <img src="assets/qr-placeholder.png" alt="QR preview" class="qr">
+        <div class="row">
+          <button class="btn" onclick="downloadPDF()">Download Profile (PDF)</button>
+          <button class="btn ghost" onclick="copyEmail()">Copy Email Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
